@@ -2,6 +2,8 @@
 
 This project demonstrates a sample Azure Marketplace Managed Application with integrated ARM template testing capabilities. It includes both the application structure and testing framework using the `arm-ttk` PowerShell module.
 
+[Sandbox](https://portal.azure.com/?feature.customPortal=false#view/Microsoft_Azure_CreateUIDef/SandboxBlade)
+
 ## Features
 
 - Complete Marketplace Managed Application structure
