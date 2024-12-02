@@ -41,7 +41,8 @@ These instructions will help you set up the project for development, testing, an
 2. Run the following command to build and test:
 
     ```bash
-    docker compose up --build
+    docker compose up test --build
+    docker compose up deploy --build
     ```
 
     This will:
