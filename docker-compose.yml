@@ -1,0 +1,26 @@
+services:
+  test:
+    build:
+      context: .
+      target: tester
+    volumes:
+      - .:/workspace
+    environment:
+      - POWERSHELL_TELEMETRY_OPTOUT=1
+
+  deploy:
+    build:
+      context: .
+      target: deployer
+    volumes:
+      - .:/workspace
+      - ~/.azure:/root/.azure
+    env_file:
+      - .env
+    environment:
+      - AZURE_LOCATION=${AZURE_LOCATION:-eastus}
+      - MANAGED_APP_NAME=${MANAGED_APP_NAME:-storage-account}
+      - RESOURCE_GROUP_NAME=${RESOURCE_GROUP_NAME:-marketplace-app}
+      - AZURE_SUBSCRIPTION_ID=${AZURE_SUBSCRIPTION_ID}
+    depends_on:
+      - test

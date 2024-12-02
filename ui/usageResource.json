@@ -1,0 +1,13 @@
+{
+    "apiVersion": "2020-06-01",
+    "name": "pid-ccce7af4-c7a6-4b31-bd00-e95e5a060901-partnercenter",
+    "type": "Microsoft.Resources/deployments",
+    "properties": {
+        "mode": "Incremental",
+        "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+        }
+    }
+}
